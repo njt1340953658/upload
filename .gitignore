@@ -1,0 +1,23 @@
+.DS_Store
+.favorites.json
+src/.router.js
+cache/
+node_modules/
+cache-loader/
+/dist
+/output
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+jsconfig.json
+package-lock.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.swp
+*.ntvs*
+*.njsproj
+*.sln

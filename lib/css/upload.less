@@ -1,0 +1,118 @@
+.ui-upload-container {
+  .ui-upload-picture-card {
+    margin: 5px 5px 0px;
+    display: inline-flex;
+    .ui-upload-click {
+      border-radius: 6px;
+      width: 148px;
+      height: 148px;
+      cursor: pointer;
+      line-height: 142px;
+      text-align: center;
+      margin-bottom: 5px;
+      background-color: #fbfdff;
+      border: 1px dashed #c0ccda;
+      i {
+        font-size: 28px;
+        color: #8c939d;
+      }
+    }
+    .ui-upload-picture-card-items {
+      width: 148px;
+      height: 148px;
+      overflow: hidden;
+      border-radius: 6px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border: 1px solid #c0ccda;
+      margin: 0 8px 8px 0;
+      position: relative;
+      display: inline-block;
+      .ui-upload-picture-img-items {
+        width: 100%;
+        height: 100%;
+      }
+      .ui-upload-picture-progress {
+        top: 50%;
+        left: 50%;
+        bottom: auto;
+        width: 126px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .ui-upload-picture-operation {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        margin: 0 6px;
+        font-size: 24px;
+        color: #fff;
+        display: inherit;
+        cursor: pointer;
+      }
+    }
+  }
+  .ui-upload-text-tip {
+    font-size: 12px;
+    color: #606266;
+    margin: -6px 0 0 2px;
+  }
+  .ui-upload-button {
+    margin-top: 5px;
+    > button {
+      display: inline-block;
+      line-height: 1;
+      white-space: nowrap;
+      cursor: pointer;
+      border: 1px solid #dcdfe6;
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 12px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #409eff;
+      border-color: #409eff;
+    }
+    .ui-upload-button-text-tip {
+      font-size: 12px;
+      color: #606266;
+      margin: 5px 0 0 0;
+    }
+  }
+  .ui-upload-line-container {
+    li {
+      font-size: 14px;
+      color: #606266;
+      line-height: 1.8;
+      margin-top: 5px;
+      position: relative;
+      border-radius: 4px;
+      width: 100%;
+      cursor: pointer;
+      .ui-upload-line-text-icon {
+        font-size: 14px;
+        padding: 0 10px 0 5px;
+      }
+      .ui-upload-line-delete-icon {
+        padding: 0 5px;
+      }
+    }
+    li:hover {
+      background-color: #f5f7fa;
+    }
+    li:hover a {
+      color: #409eff;
+    }
+    li:hover .ui-upload-line-delete-icon {
+      color: #F56C6C;
+    }
+  }
+}

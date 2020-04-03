@@ -1,0 +1,19 @@
+###################
+# 线上环境编译
+###################
+build:
+  # 配置node服务环境
+  env:
+    node: '/usr/local/node/node-v9.10.1/bin/node'
+    npm: '/usr/local/node/node-v9.10.1/bin/npm'
+  # 静态资源上传CDN
+  static-cdn:
+    accesskey: '800aea1e48cb9d61'
+    secretkey: '3d26fd4116824300b9bb2e31ebceea26'
+    module:
+      - dist: './output/fe-static'
+        release: 'beeschool/hack/fe-static'
+  # 编译命令
+  command:
+    - 'yarn setup'
+    - 'yarn build:online'
